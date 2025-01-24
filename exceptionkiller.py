@@ -1,6 +1,6 @@
 class BankingSystem:
-    def _init_(self):
-        self.accounts = {} 
+    def __init__(self):
+        self.accounts = {}
 
     def create_account(self):
         name = input("Enter your name: ").strip()
@@ -79,6 +79,6 @@ class BankingSystem:
             else:
                 print("Error: Invalid choice. Please select a valid option.")
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     bank = BankingSystem()
     bank.run()
